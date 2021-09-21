@@ -1,0 +1,613 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: hsl(219, 30%, 18%);
+    }
+    
+    header {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .logo {
+        height: 2.8rem;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    nav li {
+        margin-left: 1rem;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 1.6rem;
+    }
+    
+    nav a:hover {
+        color: hsl(176, 68%, 64%);
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        transition: .3s;
+    }
+    
+    main {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    
+    .intro {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .teste {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .intro-img {
+        height: 24rem;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .bg-intro {
+        background-image: url(../img/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 14rem;
+        width: 100%;
+        margin-top: -4rem;
+    }
+    
+    .container-intro-sobre {
+        width: 100%;
+        background-color: hsl(218, 28%, 13%);
+        margin-top: .03rem;
+    }
+    
+    .intro-sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 88%;
+        position: relative;
+        z-index: 1;
+        top: -5rem;
+    }
+    
+    .intro-sobre h1 {
+        font-family: 'Raleway', sans-serif;
+        color: whitesmoke;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1.8rem;
+    }
+    
+    .intro-sobre p {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .intro-sobre button {
+        border: 0;
+        outline: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: whitesmoke;
+        background: linear-gradient(0.90turn, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+        border-radius: 2.5rem;
+        height: 5rem;
+        width: 25rem;
+    }
+    
+    .intro-sobre button:hover {
+        filter: brightness(110%);
+    }
+    
+    .sobrenos {
+        margin-top: -1rem;
+        padding-top: 6rem;
+        width: 100%;
+        background-color: hsl(218, 28%, 13%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-sobrenos {
+        width: 88%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .conteudo-sobrenos {
+        color: whitesmoke;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    .conteudo-sobrenos img {
+        height: 10rem;
+        margin-bottom: 3rem;
+    }
+    
+    .conteudo-sobrenos h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .conteudo-sobrenos p {
+        font-size: 1.45rem;
+    }
+    
+    .produto {
+        margin-top: -1rem;
+        padding-top: 7rem;
+        background-color: hsl(218, 28%, 13%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 14rem;
+    }
+    
+    .produto-container {
+        width: 88%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+    
+    .produto-img {
+        height: 25rem;
+        margin-bottom: 3rem;
+    }
+    
+    .conteudo-produto h2 {
+        font-size: 1.92rem;
+        margin-bottom: 1rem;
+    }
+    
+    .conteudo-produto p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    
+    .link-produto {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: hsl(176, 68%, 64%);
+        font-size: 2.2rem;
+        text-decoration: none;
+        padding-bottom: .3rem;
+    }
+
+    .link-produto:hover {
+        filter: contrast(5);
+    }
+    
+    .border {
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        width: 44%;
+    }
+    
+    .testemunha {
+        margin-top: -1rem;
+        background-color: hsl(218, 28%, 13%);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-testemunha {
+        width: 80%;
+        padding-top: 5rem;
+        background-image: url(../img/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: top left 1rem;
+        background-size: 12%;
+    }
+    
+    .conteudo-testemunha {
+        background-color: hsl(219, 30%, 18%);
+        color: whitesmoke;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        border-radius: .5rem;
+        z-index: 1;
+        margin-top: -2.5rem;
+        margin-bottom: 5rem;
+        box-shadow: 0px 2px 96px -26px rgba(0, 0, 0, 0.75);
+    }
+    
+    .perfil-texto {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 1.3rem;
+    }
+    
+    .perfil-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .perfil-img {
+        height: 4rem;
+        border-radius: 100%;
+        margin-right: 1.4rem;
+    }
+    
+    .perfil-nome-um {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    
+    .perfil-nome-dois {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .early-acess {
+        width: 100%;
+        background-color: hsl(218, 28%, 13%);
+    }
+    
+    .early-acess-container {
+        border-radius: 1rem;
+        width: 88%;
+        background-color: hsl(219, 30%, 18%);
+        margin: auto;
+        text-align: center;
+        /* superior | direita | inferior | esquerda */
+        padding: 4rem 2rem 1rem 2rem;
+        z-index: 100;
+        position: relative;
+        top: 16rem;
+        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.75);
+    }
+    
+    .early-acess-container h2 {
+        color: whitesmoke;
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 1.5rem;
+    }
+    
+    .early-acess-container p {
+        color: whitesmoke;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .early-acess-container input {
+        height: 5rem;
+        width: 25rem;
+        padding-left: 1.5rem;
+        border-radius: 2.5rem;
+        border: none;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        outline: none;
+    }
+    
+    .early-acess-container button {
+        display: block;
+        margin: auto;
+        height: 5rem;
+        width: 25rem;
+        border-radius: 2.5rem;
+        border: none;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        background: linear-gradient(100deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        color: whitesmoke;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .early-acess-container button:hover {
+        filter: brightness(110%)
+    }
+    
+    footer {
+        width: 100%;
+        background-color: hsl(216, 53%, 9%);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+    
+    .footer-container {
+        padding-top: 23rem;
+        width: 88%;
+    }
+    
+    .logo-footer {
+        height: 4.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .info-localizaçã {
+        display: flex;
+    }
+    
+    .info-locação {
+        display: flex;
+    }
+    
+    .info-locação p,
+    .info-localizaçã p {
+        font-size: 1.4rem;
+        color: whitesmoke;
+        margin-bottom: 2rem;
+    }
+    
+    .info-locação img,
+    .info-localizaçã img {
+        height: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .sobre {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    
+    .sobre ul {
+        list-style: none;
+    }
+    
+    .sobre li {
+        margin-bottom: 1.5rem;
+    }
+    
+    .sobre ul a {
+        color: whitesmoke;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    .sobre ul a:hover {
+        color: hsl(176, 68%, 64%);
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        transition: .1s;
+    }
+    
+    .contato {
+        margin-bottom: 7rem;
+    }
+    
+    .contato ul {
+        list-style: none;
+    }
+    
+    .contato li {
+        margin-bottom: 1.5rem;
+    }
+    
+    .contato ul a {
+        color: whitesmoke;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    .contato ul a:hover {
+        color: hsl(176, 68%, 64%);
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        transition: .1s;
+    }
+    
+    .icones {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icones-container {
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .icones-container a {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        border: 1px solid white;
+        text-align: center;
+    }
+    
+    .icones-container a:hover {
+        color: hsl(198, 60%, 50%);
+        border: 1px solid hsl(176, 68%, 64%);
+    }
+    
+    .icones-container i {
+        position: relative;
+        bottom: .5rem;
+    }
+    
+    @media(min-width:900px) {
+        header {
+            margin-top: 4rem;
+        }
+        .logo {
+            height: 4rem;
+        }
+        nav li {
+            margin-left: 8rem;
+        }
+        .intro-img {
+            height: 50rem;
+            margin-bottom: 7rem;
+        }
+        .bg-intro {
+            background-image: url(../img/bg-curvy-desktop.svg);
+            height: 39rem;
+            background-size: 100vw;
+        }
+        .container-intro-sobre {
+            width: 100%;
+            background-color: hsl(218, 28%, 13%);
+            background-position: left;
+            margin-top: -.1rem;
+            margin-bottom: -25rem;
+        }
+        .intro-sobre {
+            top: -32rem;
+        }
+        .intro-sobre h1 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+            width: 60%;
+        }
+        .intro-sobre p {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            width: 50%;
+        }
+        .intro-sobre button {
+            font-size: 1.8rem;
+            width: 28rem;
+        }
+        .container-sobrenos {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .conteudo-sobrenos {
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 7rem;
+            width: 50%;
+            margin-left: 1rem;
+        }
+        .conteudo-sobrenos img {
+            height: 10rem;
+            margin-bottom: 3rem;
+        }
+        .conteudo-sobrenos p {
+            font-size: 1.5rem;
+            width: 68%;
+            margin: auto;
+        }
+        .produto-container {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .produto-img {
+            height: 42rem;
+            margin-right: 6rem;
+        }
+        .conteudo-produto h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            width: 50%;
+        }
+        .conteudo-produto p {
+            margin-bottom: 2rem;
+        }
+        .border {
+            width: 45%;
+        }
+        .container-testemunha {
+            width: 80%;
+            padding-top: 5rem;
+            background-image: url(../img/bg-quotes.png);
+            background-repeat: no-repeat;
+            background-position: top left 1rem;
+            background-size: 4%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .conteudo-testemunha {
+            width: 32.4rem;
+            margin-top: -2rem;
+            margin-left: 1.5rem;
+            box-shadow: 1px 1px 12px 8px rgba(21, 29, 41, 1)
+        }
+        .perfil-texto {
+            font-size: 1.4rem;
+        }
+        .early-acess-container {
+            width: 70%;
+            top: 12rem;
+        }
+        .early-acess-container h2 {
+            color: whitesmoke;
+            font-size: 3rem;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 1.5rem;
+        }
+        .early-acess-container p {
+            color: whitesmoke;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            width: 70%;
+            margin: auto;
+        }
+        .early-acess-container input {
+            margin-top: 3rem;
+            width: 40rem;
+            margin-right: 2rem;
+        }
+        .early-acess-container button {
+            display: inline-block;
+            width: 20rem;
+        }
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .info-localizaçã {
+            width: 32rem;
+        }
+        .sobre {
+            margin: 0;
+        }
+        .icones-container {
+            width: 14rem;
+        }
+    }
